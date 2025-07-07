@@ -9,6 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@arcjet/inspect": "1.0.0-beta.8",
+    "@arcjet/ip": "1.0.0-beta.8",
+    "@arcjet/next": "1.0.0-beta.8",
     "@neondatabase/serverless": "^1.0.1",
     "@types/dotenv": "^8.2.3",
     "better-auth": "^1.2.12",
