@@ -36,7 +36,7 @@ const page = () => {
             </figure>
             <p>
               Snapit makes screen recording easy. From quick walkthroughs to
-              full presentations, it's fast, it's smooth, and shareable in
+              full presentations, it&apos;s fast, it&apos;s smooth, and shareable in
               seconds
             </p>
             <article>
