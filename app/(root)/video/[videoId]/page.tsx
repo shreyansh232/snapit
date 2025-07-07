@@ -7,8 +7,10 @@ import VideoInfo from "@/components/VideoInfo";
 const page = async ({ params }: Params) => {
   const { videoId } = await params;
 
-  const { user, video } = await getVideoById(videoId);
-  if (!video) redirect("/404");
+  const result = await getVideoById(videoId);
+  if (!result) redirect("/404");
+  
+  const { user, video } = result;
 
   const transcript = await getTranscript(videoId);
 
