@@ -10,7 +10,7 @@ const geistKarla = Karla({
 
 export const metadata: Metadata = {
   title: "Snapit",
-  description: "A Screen Sharing App",
+  description: "Instant Video Recording and Sharing for Fast-Paced Teams",
   icons: {
     icon: "/assets/icons/logo.svg",
   },
