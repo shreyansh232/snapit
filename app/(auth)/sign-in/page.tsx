@@ -7,7 +7,7 @@ import React from "react";
 
 const page = () => {
   const handleSignIn = async () => {
-    return await authClient.signIn.social({ provider: "google" });
+    return await authClient.signIn.social({ provider: "google", callbackURL: "/videos" });
   };
   return (
     <main className="sign-in">
@@ -71,7 +71,7 @@ const page = () => {
             Create and share your very first <span>Snapit video </span>
             in no time!
           </p>
-          <button onClick={handleSignIn}>
+          <button onClick={handleSignIn} className="hover:bg-gray-50 transition-all">
             <Image
               src={"/assets/icons/google.svg"}
               alt="google"

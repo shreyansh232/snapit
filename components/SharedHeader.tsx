@@ -89,8 +89,8 @@ const SharedHeader = ({ subHeader, title, userImg }: SharedHeaderProps) => {
             <h1>{title}</h1>
           </article>
         </figure>
-        <aside>
-          <Link href="/upload">
+        <aside className="record">
+          <Link href="/upload" className="secondary-btn py-3">
             <Image
               src="/assets/icons/upload.svg"
               alt="upload"

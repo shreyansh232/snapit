@@ -127,7 +127,7 @@ export const saveVideoDetails = withErrorHandling(
       updatedAt: new Date(),
     });
 
-    revalidatePaths(["/"]);
+    revalidatePaths(["/videos"]);
     return { videoId: videoDetails.videoId };
   }
 );
@@ -263,7 +263,7 @@ export const deleteVideo = withErrorHandling(
     );
 
     await db.delete(videos).where(eq(videos.videoId, videoId));
-    revalidatePaths(["/", `/video/${videoId}`]);
+    revalidatePaths(["/videos", `/video/${videoId}`]);
     return {};
   }
 );
@@ -276,7 +276,7 @@ export const updateVideoVisibility = withErrorHandling(
       .set({ visibility, updatedAt: new Date() })
       .where(eq(videos.videoId, videoId));
 
-    revalidatePaths(["/", `/video/${videoId}`]);
+    revalidatePaths(["/videos", `/video/${videoId}`]);
     return {};
   }
 );

@@ -30,7 +30,7 @@ const DropdownList = ({
             <li
               key={option}
               className={cn("list-item", {
-                "bg-pink-100 text-white": selectedOption === option,
+                "bg-pink-100 hover:text-black": selectedOption === option,
               })}
               onClick={() => handleOptionClick(option)}
             >

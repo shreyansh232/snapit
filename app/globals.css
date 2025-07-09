@@ -21,7 +21,7 @@
   --color-gray-40: rgba(58, 56, 77, 0.04);
   --color-gray-100: #6c6685;
   --color-pink-10: #ffeef5;
-  --color-pink-100: #ff4393;
+  --color-pink-100: #84EB0C;
   --color-orange-100: #fe6247;
   --text-28: 1.75rem;
   --shadow-10: 0px 6px 24px 0px rgba(0, 0, 0, 0.1);
@@ -110,7 +110,7 @@
     @apply w-full min-h-screen flex flex-col-reverse lg:flex-row justify-between overflow-hidden max-lg:gap-10;
 
     .testimonial {
-      @apply bg-light-100 lg:w-1/2 flex flex-col justify-between lg:h-screen w-full py-10 px-6 lg:pl-10 gap-6;
+      @apply bg-[#6BCF3F] lg:w-1/2 flex flex-col justify-between lg:h-screen w-full py-10 px-6 lg:pl-10 gap-6;
 
       a {
         @apply flex items-center gap-2.5;
@@ -219,7 +219,7 @@
     @apply absolute bg-white shadow-lg rounded-lg flex flex-col gap-2 w-full z-10 top-12;
 
     .list-item {
-      @apply px-3 py-2.5 text-sm font-medium -tracking-[0.8px] relative text-dark-100 cursor-pointer hover:bg-pink-100 hover:text-white transition-colors duration-200 ease-in-out rounded-md;
+      @apply px-3 py-2.5 text-sm font-medium -tracking-[0.8px] relative text-dark-100 cursor-pointer hover:bg-pink-100 hover:text-black transition-colors duration-200 ease-in-out rounded-md;
 
       img {
         @apply absolute right-3 top-1/2 -translate-y-1/2;
@@ -232,7 +232,7 @@
     @apply flex flex-col items-center px-4 py-10 gap-6 rounded-2xl border border-gray-20 shadow-10 w-full;
 
     figure {
-      @apply bg-pink-10 rounded-[20px] flex items-center justify-center size-20;
+      @apply bg-[#e7ffcb] rounded-[20px] flex items-center justify-center size-20;
     }
 
     article {
@@ -301,7 +301,7 @@
   }
   /* navbar */
   .navbar {
-    @apply h-[90px] border-b border-gray-20 flex items-center;
+    @apply h-[90px] border-b border-gray-20 flex items-center bg-gray-900;
 
     nav {
       @apply flex items-center justify-between max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 w-full;
@@ -310,7 +310,7 @@
         @apply flex items-center gap-2.5;
 
         h1 {
-          @apply text-xl font-black text-blue-100 font-satoshi -tracking-[0.1px];
+          @apply text-xl font-black text-white font-satoshi -tracking-[0.1px];
         }
       }
 
@@ -344,7 +344,10 @@
   /* record screen */
   .record {
     .primary-btn {
-      @apply py-2.5 px-5 flex items-center gap-2.5 text-sm font-semibold text-white bg-pink-100 rounded-4xl;
+      @apply py-3 px-7 flex items-center gap-2.5 text-sm font-semibold text-black bg-pink-100 hover:bg-[#b8ff67] transition-all rounded-4xl border border-gray-100;
+    }
+    .secondary-btn {
+      @apply py-3 px-7 flex items-center gap-2.5 text-sm font-semibold text-black hover:text-[#84EB0C] transition-all rounded-4xl border border-gray-25;
     }
 
     .dialog {
@@ -638,10 +641,10 @@
       @apply flex gap-4 items-center;
 
       .user-btn {
-        @apply flex items-center gap-4;
+        @apply flex items-center gap-2;
 
         .delete-btn {
-          @apply border border-gray-25 rounded-4xl py-2.5 px-5 text-sm font-semibold text-orange-100;
+          @apply border border-gray-100 rounded-4xl py-2.5 px-5 text-sm font-semibold bg-pink-100 text-black;
         }
 
         .bar {
