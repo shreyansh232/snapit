@@ -1,5 +1,4 @@
 import Hero from "@/components/Hero";
-import Link from "next/link";
 
 const page = async () => {
   return (
