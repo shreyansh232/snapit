@@ -39,12 +39,12 @@ const Hero = async () => {
             
             <div data-animate="buttons" className="flex gap-2 justify-center mt-2 record">
               <Link href={isAuthenticated ? "/videos" : "/sign-in"}>
-                <button className="group primary-btn px-10 py-4 flex items-center gap-2">
+                <button className="group primary-btn px-8 py-2 flex items-center gap-2 lg:px-10 lg:py-4">
                   Get Started
                   <FiArrowRight className="transition-transform group-hover:-rotate-45 group-active:-rotate-12" />
                 </button>
               </Link>
-              <button className="secondary-btn px-10 py-4">Watch Demo</button>
+              <button className="secondary-btn px-8 py-2 lg:px-10 lg:py-4">Watch Demo</button>
             </div>
           </div>
           
