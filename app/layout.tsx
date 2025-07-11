@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     siteName: 'Snapit',
     images: [
       {
-        url: '/assets/images/meta.png',
+        url: 'https://snapit-psi.vercel.app/assets/images/meta.png',
         width: 1200,
         height: 630,
         alt: 'Snapit - Video Recording Platform',
